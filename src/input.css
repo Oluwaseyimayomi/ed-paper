@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+.fa-solid {
+    color: #F27137;
+}
+
+
+/* Header Section */
+header {
+    @apply bg-transparent px-3 text-gray-800 shadow-lg hidden md:block;
+}
+
+.header-row  {
+    @apply container mx-auto flex items-center h-auto;
+}
+
+.nav-logo {
+    @apply flex items-center justify-center;
+}
+
+nav {
+    @apply contents font-semibold text-base;
+}
+
+nav ul {
+    @apply mx-auto flex items-center;
+}
+
+nav ul li {
+    @apply p-5 xl:p-8 hover:bg-gray-400 transition-all duration-500;
+}
+
+.order-btn {
+    @apply bg-gray-800 text-white hover:border rounded-full font-semibold px-8 py-2 hover:border-gray-900 hover:text-gray-900 hover:bg-transparent transition-all duration-500;
+}
+
+
+/* Headline Section */
+.headline {
+    @apply md:flex items-center justify-between mt-6 md:h-screen;
+}
+
+.headline-text {
+    @apply px-4 md:p-4 w-auto;
+}
+
+.headline-big-text {
+    @apply text-4xl md:text-7xl text-gray-500 font-semibold;
+}
+
+.headline-sub-text {
+    @apply text-gray-500 text-base md:text-xl font-medium pt-4 pb-6;
+}
+
+.headline-img {
+    @apply ml-auto md:mx-0 md:h-screen w-3/4 md:w-auto;
+}
+
+
+/* About Us Section */
+.about-us {
+    @apply bg-[#F27137] py-5;
+}
+
+.about-card {
+    @apply text-center bg-white my-20 mx-auto shadow-md h-auto w-3/4 md:w-1/3 p-6 text-sm;
+}
+
+.about-title {
+    @apply font-bold text-xl text-[#F27137];
+}
+
+
+/* What We Do Section */
+.wwd {
+    @apply my-20 mx-auto h-auto w-4/5 p-6 text-sm;
+}
+
+.wwd-title {
+    @apply font-bold text-center text-5xl text-gray-600;
+}
+
+.card-flex {
+    @apply md:flex items-center justify-between my-5;
+}
+
+.wwd-card {
+    @apply mt-5 md:m-0 md:w-[30%] h-80 shadow-lg p-3 hover:bg-slate-100 transition-all duration-200;
+}
+
+.card-heading {
+    @apply font-semibold text-center text-2xl my-2 font-bold;
+}
+
+.card-number {
+    @apply text-3xl text-[#F27137] opacity-60 font-black px-2 text-left;
+}
+
+.wwd-card img {
+    @apply h-1/2 w-auto;
+}
+
+
+/* Pricing Section */
+.medium-heading {
+    @apply font-bold text-center text-3xl text-gray-600;
+}
+
+.price {
+    @apply font-extrabold text-center text-4xl text-gray-700;
+}
+
+.fa-ul {
+    @apply mb-5;
+}
+
+.price-card {
+    @apply mt-10 mx-auto md:m-0 w-3/4 md:w-1/4 shadow-xl px-3 py-6 hover:bg-slate-100 md:hover:bg-transparent hover:shadow-none transition-all duration-200;
+}
+
+.delivery-info {
+    @apply text-gray-500 text-xs my-2;
+}
+
+
+/* Online Payment Section*/
+.payment {
+    @apply md:flex my-5 justify-between items-center h-screen;
+}
+
+.payment-text {
+    @apply w-4/5 ml-auto mt-6 md:mx-3 md:w-1/3 md:w-auto;
+}
+
+.payment img {
+    @apply md:h-screen w-4/5 md:w-7/12 md:w-auto drop-shadow-xl;
+}
+
+.payment-banner-title {
+    @apply font-extrabold text-3xl md:text-5xl text-gray-500;
+}
+
+.payment-banner-details {
+    @apply text-gray-700 mt-4;
+}
+
+.margin-btn {
+    @apply my-5;
+}
+
+
+/* Comments Section */
+.comments {
+    @apply md:flex md:justify-between mt-4 px-4;
+}
+
+.comments-card {
+    @apply mx-auto md:mx-0 my-10 md:my-0 px-5 pt-14 w-2/3 md:w-1/5 md:shadow-xl md:hover:shadow-md shadow-md hover:shadow text-sm h-44 transition-all duration-200;
+}
+
+.commentator {
+    @apply text-[#F27137] font-semibold text-right mt-6;
+}
+
+
+/* Footer */
+footer {
+    @apply bg-gray-700 text-white pt-6 px-[5%] h-screen;
+}
+
+.footer-flex {
+    @apply md:flex justify-between h-[90%];
+}
+
+.footer-col {
+    @apply mt-6 md:mt-0 w-11/12 md:w-1/4;
+}
+
+.footer-heading {
+    @apply font-extrabold text-lg mb-2;
+}
+
+.footer-col p {
+    @apply text-sm;
+}
+
+.footer-col ul {
+    @apply text-sm;
+}
+
+footer a {
+    @apply hover:text-black hover:p-2 transition-all duration-200;
+}
+
+.copyright {
+    @apply text-sm align-bottom text-center mt-4;
+}
+
+.footer-brand {
+    @apply text-[#F27137];
+}
+
+/* Scroll Button */
+.floating-btn {
+    @apply text-4xl float-right fixed right-8 bottom-5 text-white bg-[#F27137] p-4 py-2 rounded-[50%] hover:border hover:border-[#F27137] hover:bg-transparent hover:text-[#F27137] transition-all duration-200;
+}
