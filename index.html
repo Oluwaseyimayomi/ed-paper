@@ -5,30 +5,32 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./dist/output.css">
+        <link rel="stylesheet" href="dist/output.css">
         <!--Custom CSS-->
-        <link rel="stylesheet" href="./src/input.css">
+        <link rel="stylesheet" href="src/input.css">
         <!-- Font Awesome -->
-        <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
         <!--<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">-->
+        <!-- Custom Script-->
+        <script src="./src/custom.js" async defer></script>
         <title>Swift Delivery & Top Notch Customer Satisfaction | EdPaper</title>
     </head>
     <body>
         <header id="header">
             <div class="header-row">
               <a href="#" class="nav-logo">
-                <img class="h-16" src="https://i.ibb.co/6Yxs70d/2021-10-26-23h27-03.png" alt="" />
+                <!--<img class="h-16" src="https://i.ibb.co/6Yxs70d/2021-10-26-23h27-03.png" alt="" />-->
                 <span class="ml-4 text-xl font-bold">Ed-Paper</span>
               </a>
-              <nav>
+              <nav id="navDropdown">
                 <ul>
                   <li class="active">
-                    <a href="./index.html">
+                    <a href="index.html">
                       <span>Home</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#About">
+                    <a href="about.html">
                       <span>About</span>
                     </a>
                   </li>
@@ -44,27 +46,43 @@
                   </li>
                 </ul>
               </nav>
-              <button class="order-btn">Place Order</button>
+              <button class="order-btn hidden sm:block">Place Order</button>
+              <div class="mobile-toggle"><i class="fa fa-bars" onclick="navDropdown()" id="firstIcon"></i></div>
+              <div class="mobile-toggle" id="secondIcon"><i class="fa fa-x" onclick="navPullUp()"></i></div>
             </div>
           </header>
 
           <!-- Headline Section -->
           <section class="headline">
             <div class="headline-text">
-                <div class="headline-big-text">How <span class="font-black">FAST</span> Do You<br>Want Your Documents<br>Delivered To You?</div>
-                <div class="headline-sub-text">With just a click you can get your document printed and delivered wherever you are before your coffee gets cold</div>
-                <button class="order-btn">Get Started</button>
+                <div class="headline-big-text">Save <span class="font-black">TIME</span>, Save <span class="font-black">STRESS</span></div>
+                <div class="headline-sub-text">Save yourself from the horror of having to stand in the crowd just to get your documents printed or make payments online without even knowing when it's going to be your turn. It's horrible and we know that, so let get the job done ASAP!</div>
+                <div class="group-btn">
+                  <button class="order-btn">Get Started</button>
+                  <button class="gray-btn">Track Order</button>
+                </div>
             </div>
-            <img src="./img/lady-with-document.png" alt="A lady with document" class="headline-img">
+            <div class="headline-img"><img src="img/lady-with-document.png" alt="Person with document"></div>
           </section>
 
-          <!-- About Section -->
-          <section class="about-us">
-            <div class="about-card">
-              <div class="about-title">
-                  About Us
+          <!-- Question Section -->
+          <section class="question">
+            <div class="question-title">
+              Would You Choose...?
+            </div>
+            <div class="question-flex">
+              <div class="question-circle">
+                <div class="circle-title"><span class="card-number">A.</span> THE OLD WAY</div>
+                <p class="circle-text-
+                body">Waiting on a qeue in a cybercafe, sweating profusely and worry about keeping up with deadline and time just to print, photocopy or spiral bind your documents, or probably there going through those stress just to make payments online. If you are making payments online, swift and flawless transaction is what you get. If you are making</p>
               </div>
-              <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel commodi nemo voluptas blanditiis ad architecto harum ratione alias vitae labore eius error debitis quia atque, minus distinctio eum repudiandae.</div>
+
+              <div class="question-or">OR</div><!--Change the "OR" to transactional arrow"\\"-->
+
+              <div class="question-circle circle-right">
+                <div class="circle-title"><span class="card-number">B.</span> THE Ed-Paper WAY</div>
+                <p class="circle-text-body">Sitting comfortablely in your house with your device, placing an order with an assurance of getting the best service quality and getting ready well-arranged and packeage documents delivered to you without having to move an inch out of your comfort zone. If you are making payments online, swift and flawless transaction is what you get.</p> 
+              </div>
             </div>
           </section><hr>
 
@@ -73,29 +91,52 @@
             <div class="wwd-title">
                 What We do
             </div>
-            <div class="card-flex">
-              <div class="wwd-card">
-                <span class="card-number">.01</span>
-                <div>
-                  <div class="card-heading">Print</div>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus omnis suscipit.
+            
+              <div class="wwd-margin">
+                <div class="card-flex">
+                  <img src="img/man-with-printer.jpg" alt="printing picture" class="wwd-img">
+                  <div class="wwd-card">
+                    <span class="card-number">.01</span>
+                    <div>
+                      <div class="card-heading">Print</div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus omnis suscipit. lorem
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="wwd-card">
-                <span class="card-number">.02</span>
-                <div>
-                  <div class="card-heading">Bind</div>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus omnis suscipit.
+
+              <div class="wwd-margin">
+                <div class="card-flex">
+                  <div class="wwd-card hidden sm:inline">
+                    <span class="card-number">.02</span>
+                    <div>
+                      <div class="card-heading">Bind</div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus omnis suscipit.
+                    </div>
+                  </div>
+                  <img src="img/stacked-files.jpg" alt="Binding picture" class="wwd-img">
+                  <div class="wwd-card sm:hidden">
+                    <span class="card-number">.02</span>
+                    <div>
+                      <div class="card-heading">Bind</div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus omnis suscipit.
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="wwd-card">
-                <span class="card-number">.03</span>
-                <div>
-                  <div class="card-heading">Pay Online</div>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus omnis suscipit.
+
+              <div class="wwd-margin">
+                <div class="card-flex">
+                  <img src="img/faceless-man-pay.jpg" alt="payment terminal image" class="wwd-img">
+                  <div class="wwd-card">
+                    <span class="card-number">.03</span>
+                    <div>
+                      <div class="card-heading">Pay Online</div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus omnis suscipit.
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
           </section><hr>
 
           <!-- Pricing Section -->
@@ -107,7 +148,7 @@
               <div class="price-card">
                 <div class="price">₦50</div>
                 <div>
-                  <div class="card-heading">Basic</div>
+                  <div class="price-card-heading">Basic</div>
                   <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Printed Document</li>
                     <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Black & White</li>
@@ -126,7 +167,7 @@
               <div class="price-card">
                 <div class="price">₦50</div>
                 <div>
-                  <div class="card-heading">Standard</div>
+                  <div class="price-card-heading">Standard</div>
                   <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Printed documents</li>
                     <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Door delivery</li>
@@ -145,7 +186,7 @@
               <div class="price-card">
                 <div class="price">₦100</div>
                 <div>
-                  <div class="card-heading">Premium</div>
+                  <div class="price-card-heading">Premium</div>
                   <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Printed document</li>
                     <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Door delivery</li>
@@ -166,7 +207,7 @@
 
           <!-- Payment Banner Section -->
           <section class="payment">
-            <img src="./img/female-pay-online.png" alt="Man Paying Online">
+            <img src="img/female-pay-online.png" alt="Man Paying Online">
             <div class="payment-text">
               <div class="payment-banner-title">
                 Easy Online Payments
@@ -175,6 +216,13 @@
                 We can help make your online payments seamless, and with <span class="font-bold">100%</span> success rate.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad, voluptatum libero voluptate fugiat.
               </div>
+              <ul class="fa-ul payment-list">
+                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>School fees</li>
+                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Acceptance fees</li>
+                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Medical fees</li>
+                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Field trips</li>
+                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Post-UTME</li>
+              </ul>
               <div class="margin-btn">
                 <button class="order-btn">Learn more</button>
               </div>
@@ -182,24 +230,25 @@
           </section><hr>
 
           <!--Comments Section-->
-          <section class="my-20">
-            <div class="medium-heading">What Are They Saying?</div>
-            <div class="comments">
-              <div class="comments-card">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit, rerum deserunt alias.
-                <div class="commentator">~~~~ Akonda Omo</div>
+          <section class="my-20 mx-8">
+            <div class="medium-heading">24/7 Customer Care</div>
+            <div class="card-flex">
+              <div class="support-icon">
+                <i class="fa-solid fa-clipboard-question"></i><!--Use headphone icon-->
               </div>
-              <div class="comments-card hidden md:block">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit, rerum deserunt alias.
-                <div class="commentator">~~~~ Akonda Omo</div>
-              </div>
-              <div class="comments-card">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit, rerum deserunt alias.
-                <div class="commentator">~~~~ Akonda Omo</div>
-              </div>
-              <div class="comments-card hidden md:block">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit, rerum deserunt alias.
-                <div class="commentator">--- Akonda Omo</div>
+              <div class="enquiry-card">
+                <div class="card-heading">Have you got any question?</div>
+                Speak Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aperia uod aliquam atque. Unde quae animi enim saepe et eveniet laborum veniam consectetur minima sit!
+                <form class="enquiry-form">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" required><br>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" required><br>
+                  <label for="enquiry">Enquiry:</label>
+                  <textarea id="enquiry" cols="12" rows="3" required></textarea><br><!--Disable resize-->
+                  <button class="support-btn">Submit</button>
+                </form>
+                <div class="voicecall">Would you prefer a voice call? <a href="#">Click here</a></div>
               </div>
             </div>
           </section>
@@ -224,7 +273,7 @@
                 <div class="footer-heading">Explore</div>
                 <ul>
                   <li><a href="">FAQ</a></li>
-                  <li><a href="">About</a></li>
+                  <li><a href="about.html">About</a></li>
                   <li><a href="">Contact</a></li>
                   <li><a href="">Our Services</a></li>
                   <li><a href="">Plans & Pricing</a></li>

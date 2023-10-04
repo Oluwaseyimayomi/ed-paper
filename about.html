@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="dist/output.css">
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="src/input.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <!--<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">-->
+        <!-- Custom Script-->
+        <script src="./src/custom.js" async defer></script>
+        <title>Swift Delivery & Top Notch Customer Satisfaction | EdPaper</title>
+    </head>
+    <body>
+        <header id="header">
+            <div class="header-row">
+              <a href="#" class="nav-logo">
+                <!--<img class="h-16" src="https://i.ibb.co/6Yxs70d/2021-10-26-23h27-03.png" alt="" />-->
+                <span class="ml-4 text-xl font-bold">Ed-Paper</span>
+              </a>
+              <nav id="navDropdown">
+                <ul>
+                  <li class="active">
+                    <a href="index.html">
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#about.html">
+                      <span>About</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#Contact">
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#Services">
+                      <span>Services</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <button class="order-btn hidden sm:block">Place Order</button>
+              <div class="mobile-toggle"><i class="fa fa-bars" onclick="navDropdown()" id="firstIcon"></i></div>
+              <div class="mobile-toggle" id="secondIcon"><i class="fa fa-x" onclick="navPullUp()"></i></div>
+            </div>
+          </header>
+
+          <!--WHAT IS ED=PAPER-->
+          <section class="about-us">
+            <div class="question-title">What is Ed-Paper?</div>
+            <div class="about-flex">
+              <div class="about-details">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rem quidem magni est fuga blanditiis unde, accusamus consequuntur qui consectetur illo debitis aliquam tempore esse. Numquam expedita aspernatur veritatis blanditiis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, nesciunt provident saepe iste soluta dolorem pariatur recusandae voluptate commodi facilis dolores sunt quam quibusdam laborum enim vel excepturi vero autem.</p>
+                <blockquote><sup><i class="fa-solid fa-quote-left"></i></sup>Lorem ipsum dolor sit amet c culpa, distinctio nam? Vel illo omnis consequatur, culpa nrgrifg excepturi aut saepe corrupti.<sup><i class="fa-solid fa-quote-right"></i></sup></blockquote>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio ipsa porro maxime labore atque accusamus error? Esse enim quibusdam hic! Adipisci architecto pariatur in illum, accusamus nobis. Aperiam Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime necessitatibus similique aliquam esse, fuga cupiditate fugiat ipsam sed voluptates maiores eos voluptatem dicta atque sint consequuntur optio repellat dolore tenetur?</p>
+              </div>
+              <div>
+                <img src="" alt="Ed-paper Logo">
+              </div>
+            </div>
+          </section>
+
+          <!--FAQ Section-->
+          <section class="faq">
+            <div class="medium-heading">Frequently Asked Questions</div>
+            <ul class="faq-dropdown">
+              <li class="faq-question">
+                <div class="faq-flex shadow-bottom">
+                  Question 1?
+                  <div><i class="fa-solid fa-chevron-down" onclick="faqDropdown()" id="chevronDown"></i></div>
+                  <div id="chevronUp"><i class="fa-solid fa-chevron-up" onclick="faqPullUp()"></i></div>
+                </div>
+                <p class="faq-answer" id="faqAnswer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odit vitae inventore ullam culpa doloribus nulla, expedita consequatur et! Fuga dicta dolore explicabo repellat illum velit nihil excepturi tempora illo.</p>
+              </li>
+
+              <li class="faq-question">
+                <div class="faq-flex shadow-bottom">
+                  Question 2?
+                  <div><i class="fa-solid fa-chevron-down" onclick="faqDropdown()" id="chevronDown"></i></div>
+                  <div id="chevronUp"><i class="fa-solid fa-chevron-up" onclick="faqPullUp()"></i></div>
+                </div>
+                <p class="faq-answer" id="faqAnswer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odit vitae inventore ullam culpa doloribus nulla, expedita consequatur et! Fuga dicta dolore explicabo repellat illum velit nihil excepturi tempora illo.</p>
+              </li>
+
+              <li class="faq-question">
+                <div class="faq-flex shadow-bottom">
+                  Question 3?
+                  <div><i class="fa-solid fa-chevron-down" onclick="faqDropdown()" id="chevronDown"></i></div>
+                  <div id="chevronUp"><i class="fa-solid fa-chevron-up" onclick="faqPullUp()"></i></div>
+                </div>
+                <p class="faq-answer" id="faqAnswer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odit vitae inventore ullam culpa doloribus nulla, expedita consequatur et! Fuga dicta dolore explicabo repellat illum velit nihil excepturi tempora illo.</p>
+              </li>
+
+              <li class="faq-question">
+                <div class="faq-flex shadow-bottom">
+                  Question 4?
+                  <div><i class="fa-solid fa-chevron-down" onclick="faqDropdown()" id="chevronDown"></i></div>
+                  <div id="chevronUp"><i class="fa-solid fa-chevron-up" onclick="faqPullUp()"></i></div>
+                </div>
+                <p class="faq-answer" id="faqAnswer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odit vitae inventore ullam culpa doloribus nulla, expedita consequatur et! Fuga dicta dolore explicabo repellat illum velit nihil excepturi tempora illo.</p>
+              </li>
+
+              <li class="faq-question">
+                <div class="faq-flex shadow-bottom">
+                  Question 5?
+                  <div><i class="fa-solid fa-chevron-down" onclick="faqDropdown()" id="chevronDown"></i></div>
+                  <div id="chevronUp"><i class="fa-solid fa-chevron-up" onclick="faqPullUp()"></i></div>
+                </div>
+                <p class="faq-answer" id="faqAnswer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odit vitae inventore ullam culpa doloribus nulla, expedita consequatur et! Fuga dicta dolore explicabo repellat illum velit nihil excepturi tempora illo.</p>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Footer -->
+          <footer>
+            <div class="footer-flex">
+              <div class="footer-col">
+                <div class="footer-heading">Socials</div>
+                <div class="">
+                  <a href=""><i class="fa fa-whatsapp"></i></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="footer-col">
+                <div class="footer-heading">Contact</div>
+                <p><i class="fa fa-phone"></i> +234-801-010-1010</p>
+                <p><a href="#"><i class="fa fa-envelope"></i> hello@edpaper.com</a></p>
+              </div>
+              <div class="footer-col">
+                <div class="footer-heading">Explore</div>
+                <ul>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Our Services</a></li>
+                  <li><a href="">Plans & Pricing</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <div class="footer-heading">Our Brief</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus nam, necessitatibus suscipit quaerat rem voluptatibus pariatur. Esse qui mollitia optio, aut iure, quia cumque earum at dignissimos dolore accusamus!</p>
+              </div>
+            </div><hr>
+
+            <div class="copyright">
+              &copy; All copyrights reserved. 2023 <span class="footer-brand">Ed-Paper.com</span>
+            </div>
+          </footer>
+
+          <div class="floating-btn">
+            <a href="#header"><i class="fa fa-caret-up"></i></a>
+          </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
