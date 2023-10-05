@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="dist/output.css">
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="src/input.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <!--<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">-->
+        <!-- Custom Script-->
+        <script src="./src/custom.js" async defer></script>
+        <title>Swift Delivery & Top Notch Customer Satisfaction | EdPaper</title>
+    </head>
+    <body>
+        <header id="header">
+            <div class="header-row">
+              <a href="#" class="nav-logo">
+                <!--<img class="h-16" src="https://i.ibb.co/6Yxs70d/2021-10-26-23h27-03.png" alt="" />-->
+                <span class="ml-4 text-xl font-bold">Ed-Paper</span>
+              </a>
+              <nav id="navDropdown">
+                <ul>
+                  <li class="active">
+                    <a href="index.html">
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="about.html">
+                      <span>About</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact.html">
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#Services">
+                      <span>Services</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <button class="order-btn hidden sm:block">Place Order</button>
+              <div class="mobile-toggle"><i class="fa fa-bars" onclick="navDropdown()" id="firstIcon"></i></div>
+              <div class="mobile-toggle" id="secondIcon"><i class="fa fa-x" onclick="navPullUp()"></i></div>
+            </div>
+          </header>
+
+          <div class="contact-big-text">24/7<br>Customer Support</div>
+
+          <!--Form section-->
+          <section class="about-flex">
+            <div class="contact-info">
+                <div class="contact-md-text">Get In Touch</div>
+                <div class="contact-text-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, excepturi. Numquam vero, incidunt dolore temporibus expedita voluptatibus modi!</div>
+                <form class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Harley Quinn" required><br>
+                    <label for="mail">Email:</label>
+                    <input type="email" name="mail" id="mail" placeholder="example@gmail.com"><br>
+                    <label for="mobile">Phone No:</label>
+                    <input type="text" name="mobile" id="mobile" placeholder="08012345678" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea cols="20" rows="6" placeholder="Your message here"></textarea><br>
+                    <button class="support-btn">Send <i class="fa fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+            <!-- Social Links-->
+            <div class="contact-social">
+              <div class="contact-social-heading">Like, follow and contact us on any of our social media handles</div>
+                <ul>
+                    <li><a href=""><img src="./img/icons/icons8-facebook.svg" alt="Facebook icon"> <span class="social-text">Facebook</span></a></li>
+                    <li><a href=""><img src="./img/icons/icons8-instagram.svg" alt="Instagram icon"> <span class="social-text">Instagram</span></a></li>
+                    <li><a href=""><img src="./img/icons/icons8-whatsapp.svg" alt="WhatsApp icon"> <span class="social-text">WhatsApp</span></a></li>
+                    <li><a href=""><img src="./img/icons/icons8-telegram.svg" alt="Telegram icon"> <span class="social-text">Telegram</span></a></li>
+                    <li><a href=""><img src="./img/icons/icons8-twitterx.svg" alt="X (formerly Twitter) icon"> <span class="social-text">X (formerly Twitter)</span></a></li>
+                </ul>
+                <div class="credibility"><a target="_blank" href="https://icons8.com">Icons by Icons8</a></div>
+            </div>
+          </section>
+
+          <!--Call and Address Section-->
+          <section class="call-address">
+            <div class="call-center">
+                <div class="call-center-heading"><i class="fa fa-phone"></i> Call Center</div>
+                <ul>
+                    <li>0801-234-5678</li>
+                    <li>0801-234-5678</li>
+                    <li>0801-234-5678</li>
+                </ul>
+            </div>
+            
+            <div class="address">
+                <i class="fa-solid fa-map-marker-alt"></i>
+                Olusegun Agagu University of Science and Technology<br>Okitipupa, Ondo state.
+            </div>
+          </section>
+
+          <!-- Footer -->
+          <footer>
+            <div class="footer-flex">
+              <div class="footer-col">
+                <div class="footer-heading">Socials</div>
+                <div class="">
+                  <a href=""><i class="fa fa-whatsapp"></i></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="footer-col">
+                <div class="footer-heading">Contact</div>
+                <p><i class="fa fa-phone"></i> +234-801-010-1010</p>
+                <p><a href="#"><i class="fa fa-envelope"></i> hello@edpaper.com</a></p>
+              </div>
+              <div class="footer-col">
+                <div class="footer-heading">Explore</div>
+                <ul>
+                  <li><a href="about.html">FAQ</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="">Our Services</a></li>
+                  <li><a href="">Plans & Pricing</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <div class="footer-heading">Our Brief</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus nam, necessitatibus suscipit quaerat rem voluptatibus pariatur. Esse qui mollitia optio, aut iure, quia cumque earum at dignissimos dolore accusamus!</p>
+              </div>
+            </div><hr>
+
+            <div class="copyright">
+              &copy; All copyrights reserved. 2023 <span class="footer-brand">Ed-Paper.com</span>
+            </div>
+          </footer>
+
+          <div class="floating-btn">
+            <a href="#header"><i class="fa fa-caret-up"></i></a>
+          </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -152,7 +152,7 @@ nav ul li {
 }
 
 .wwd-margin {
-    @apply my-20 lg:h-screen w-full;
+    @apply my-20 sm:h-screen w-full;
 }
 
 /* Pricing Section */
@@ -216,32 +216,20 @@ nav ul li {
 
 
 /*Support section*/
-.support-icon {
-    @apply text-[300px] justify-center text-center sm:w-[40%] lg:w-3/5;
+.support-img {
+    @apply my-5 sm:w-3/5;
 }
 
 .enquiry-card {
-    @apply text-gray-700 bg-slate-100 rounded-xl mt-3 md:w-[60%]
-    h-fit shadow-xl p-3 transition-all duration-200;
-}
-
-.enquiry-form {
-    @apply w-[70%] px-2 h-auto mx-auto text-sm;
+    @apply text-gray-700 rounded-xl mt-3 md:w-[60%]
+    h-fit shadow-xl p-6 transition-all duration-200;
 }
 
 .support-btn {
-    @apply bg-gray-800 text-white hover:border rounded-full text-sm font-semibold px-2 py-1 hover:border-gray-900 hover:text-gray-900 hover:bg-transparent transition-all duration-500 ml-[65%] my-1;
-}
-
-form input {
-    @apply my-1 border justify-center;
+    @apply bg-gray-800 text-white hover:border rounded-full text-sm font-semibold px-2 py-1 hover:border-gray-900 hover:text-gray-900 hover:bg-transparent transition-all duration-500 float-right my-1;
 }
 
 .voicecall {
-    @apply text-xs;
-}
-
-.voicecall a {
     @apply text-[#F27137] hover:underline;
 }
 
@@ -285,9 +273,100 @@ blockquote {
     @apply hidden m-2 p-2 border-t border-orange-500;
 }
 
-#chevronUp {
-    @apply hidden;
+#chevronDown {
+    @apply cursor-pointer;
 }
+
+#chevronUp {
+    @apply hidden cursor-pointer;
+}
+
+
+/*Contact us styles*/
+/*big text*/
+.contact-big-text {
+    @apply text-5xl text-[#f27e49] text-center font-bold mt-8 mb-5;
+}
+
+.contact-info {
+    @apply sm:w-[70%] p-12;
+}
+
+.contact-md-text {
+    @apply text-2xl font-bold text-gray-700;
+}
+
+.contact-text-detail {
+    @apply text-slate-700;
+}
+
+/*Contact form section*/
+.contact-form {
+    @apply sm:w-[50%] my-6;
+}
+
+.contact-form label {
+    @apply font-medium text-sm;
+}
+
+.contact-form input {
+    @apply w-full pl-2 py-1 text-sm placeholder:italic placeholder:text-xs rounded-md ring-1 ring-inset ring-gray-400 hover:ring-orange-500 transition-all duration-200;
+}
+
+.contact-form textarea {
+    @apply resize-none w-full pl-2 py-1 text-sm placeholder:italic placeholder:text-xs rounded-md ring-1 ring-inset ring-gray-400 hover:ring-orange-500 transition-all duration-200;
+}
+
+/*Contact social handle*/
+.contact-social {
+    @apply sm:w-1/5 mx-[10%] p-6 shadow-xl rounded-md text-gray-700;
+}
+
+.contact-social a {
+    @apply hover:underline text-[#f27e29];
+}
+
+.contact-social ul {
+    @apply flex flex-wrap items-center sm:block;
+}
+
+.contact-social ul li {
+    @apply w-[27.2%] sm:my-2 sm:mx-auto mx-2;
+}
+
+.contact-social ul li img {
+    @apply drop-shadow-md;
+}
+
+.contact-social-heading {
+    @apply font-[600] mb-4;
+}
+
+.social-text {
+    @apply text-xs;
+}
+
+.credibility {
+    @apply text-[10px] italic text-end mt-3;
+}
+
+/*Call center and address*/
+.call-address {
+    @apply w-[80%] h-fit shadow-xl my-4 mx-auto flex items-center justify-between py-4 px-6 text-xs;
+}
+
+.call-center {
+    @apply w-[60%] sm:flex items-center;
+}
+
+.call-center-heading {
+    @apply text-[#f27e49] font-[600] mr-3 mb-3 text-base;
+}
+
+.address {
+    @apply ml-6 text-right;
+}
+
 
 /* Footer */
 footer {
